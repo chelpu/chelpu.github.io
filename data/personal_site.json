@@ -1,0 +1,64 @@
+{
+    "projects": [
+        {
+            "title": "Cello Lingo",
+            "link": "https://github.com/chelpu/CelloLingo",
+            "description": "An app about cello.",
+            "image": ""
+        },
+        {
+            "title": "Quack",
+            "link": "https://itunes.apple.com/us/app/quack!/id948865066?mt=8",
+            "description": "An app about questions.",
+            "image": ""
+        },
+        {
+            "title": "Housemate",
+            "link": "https://github.com/chelpu/Housemate",
+            "description": "An app about house.",
+            "image": ""
+        },
+        {
+            "title": "Sound Sender",
+            "link": "https://github.com/chelpu/cloud-squared",
+            "description": "An app about sounds.",
+            "image": ""
+        }
+    ],
+    "experience": [
+        {
+            "company": "University of Michigan - College of Engineering",
+            "title": "ENGR 101 Instructor's Aide",
+            "dates": "September 2013 - Present",
+            "description": "help students with stuff"
+        },
+        {
+            "company": "Twilio",
+            "title": "Software Engineering Intern",
+            "dates": "May 2014 - August 2014",
+            "description": "do stuff with Java and js and more"
+        },
+        {
+            "company": "Detroit Labs",
+            "title": "Application Developer Intern",
+            "dates": "May 2013 - August 2013",
+            "description": "help students with stuff"
+        },
+        {
+            "company": "Women in Science and Engineering",
+            "title": "RobotC Instructor",
+            "dates": "June 2013",
+            "description": "help high schoolers learn robotC"
+        },
+        {
+            "company": "Engineering Advising Center",
+            "title": "Peer Advisor",
+            "dates": "June 2012 - April 2013",
+            "description": "help freshmen with shit"
+        }
+    ],
+    "about": {
+        "picture": "",
+        "description": "I'm a senior at the University of Michigan studying computer science and stuff."
+    }
+}
