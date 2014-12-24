@@ -1,61 +1,62 @@
 body {
-    background-color: #808080;
+    margin-left: 0px;
+    margin-top: 0px;
 }
 
-/*----- Tabs -----*/
-.tabs {
-    width:100%;
-    display:inline-block;
+.menu {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding-bottom: 20px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.3);
 }
- 
-    /*----- Tab Links -----*/
-    /* Clearfix */
-    .tab-links:after {
-        display:block;
-        clear:both;
-        content:'';
-    }
- 
-    .tab-links li {
-        margin:0px 5px;
-        float:left;
-        list-style:none;
-    }
- 
-        .tab-links a {
-            padding:9px 15px;
-            display:inline-block;
-            border-radius:3px 3px 0px 0px;
-            background:#7FB5DA;
-            font-size:16px;
-            font-weight:600;
-            color:#4c4c4c;
-            transition:all linear 0.15s;
-            text-decoration: none;
-        }
- 
-        .tab-links a:hover {
-            background:#a7cce5;
-            text-decoration:none;
-        }
- 
-    li.active a, li.active a:hover {
-        background:#fff;
-        color:#4c4c4c;
-    }
- 
-    /*----- Content of Tabs -----*/
-    .tab-content {
-        padding:15px;
-        border-radius:3px;
-        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
-        background:#fff;
-    }
- 
-    .tab {
-        display:none;
-    }
 
-    .tab.active {
-        display:block;
-    }
+.menu-list {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.menu-elts {
+    list-style: none;
+    
+}
+
+.menu-elts li {
+    display: block;
+    float: left;
+    margin-left: 13%; 
+}
+
+.menu-elts a {
+    font-family: Helvetica;
+    font-size: 16pt;
+    text-decoration: none; 
+}
+
+.giant-pic {
+    width: auto;
+    height: auto;
+    position: absolute;
+}
+
+.giant-pic-container img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+.name {
+    left: 0;
+    font-family: Helvetica;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+    font-size: 60pt;
+}
