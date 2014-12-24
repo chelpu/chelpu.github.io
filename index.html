@@ -1,6 +1,7 @@
 <head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="tab_control.js"></script>
+    <script src="ascensor.js"></script>
     <link rel=stylesheet type="text/css" href="style/style.css">
 </head>
 <body>
@@ -14,14 +15,55 @@
             </ul>
         </div>
     </div>
-
-    <div class="giant-pic-container">
-        <div class="giant-pic">
-            <img src="images/giant-pic.png"/>
-            <div class="name">
-                <p>Chelsea Muthafuckin Pugh</p>
-            </div>
-        </div>
+    <div class="container">
+        <ul class="sections">
+            <li class="giant-pic-container">
+                <div class="giant-pic">
+                    <img src="images/giant-pic.png"/>
+                    <div class="name">
+                        <p>Chelsea Pugh</p>
+                    </div>
+                </div>
+            </li>
+            <li id="about">
+                <script>
+                $.getJSON("data/personal_site.json", function(data) {
+                    var about = data["about"];
+                    $("#about").append('<p>' + about["description"] + '</p>');
+                    $("#about").append('<br>');
+                });                    
+                </script>
+            </li>
+            <li id="projects">
+                <h1>Projects</h1>
+                <script>
+                $.getJSON("data/personal_site.json", function(data) {
+                    var experience_list = data["projects"];
+                    for(var i = 0; i < experience_list.length; i++) {
+                        $("#projects").append('<h2>' + experience_list[i]["title"] + '</h2>');
+                        $("#projects").append('<h3>' + experience_list[i]["link"] + '</h3>');
+                        $("#projects").append('<p>' + experience_list[i]["description"] + '</p>');
+                        $("#projects").append('<br>');
+                    }
+                });                    
+                </script>
+            </li>
+            <li id="experience">
+                <h1>Experience</h1>
+                <script>
+                $.getJSON("data/personal_site.json", function(data) {
+                    var experience_list = data["experience"];
+                    for(var i = 0; i < experience_list.length; i++) {
+                        $("#experience").append('<h1>' + experience_list[i]["company"] + '</h1>');
+                        $("#experience").append('<h2>' + experience_list[i]["title"] + '</h2>');
+                        $("#experience").append('<h3>' + experience_list[i]["dates"] + '</h3>');
+                        $("#experience").append('<p>' + experience_list[i]["description"] + '</p>');
+                        $("#experience").append('<br>');
+                    }
+                });                    
+                </script>
+            </li>
+        </ul>
     </div>
 
 <!--     <div class="tabs">
