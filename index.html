@@ -35,7 +35,7 @@
                 </script>
             </li>
             <li id="projects">
-                <h1>Projects</h1>
+                <h1 id="projects_header">Projects</h1>
                 <script>
                 $.getJSON("data/personal_site.json", function(data) {
                     var experience_list = data["projects"];
@@ -65,48 +65,4 @@
             </li>
         </ul>
     </div>
-
-<!--     <div class="tabs">
-        <ul class="tab-links">
-            <li class="active"><a href="#tab1">About</a></li>
-            <li><a href="#tab2">Projects</a></li>
-            <li><a href="#tab3">Experience</a></li>
-        </ul>
-     
-        <div class="tab-content">
-            <div id="tab1" class="tab active">
-                <script>
-                    $.getJSON("data/personal_site.json", function(data) {
-                        console.log(data);
-                        $("#tab1").append('<p>' + data["about"]["description"] +'</p>');
-                    });
-                </script>
-            </div>
-     
-            <div id="tab2" class="tab">
-                <script>
-                    $.getJSON("data/personal_site.json", function(data) {
-                        var experience_list = data["experience"];
-                        for(var i = 0; i < experience_list.length; i++) {
-                            $("#tab2").append('<h1>' + experience_list[i]["company"] + '</h1>');
-                            $("#tab2").append('<h2>' + experience_list[i]["title"] + '</h2>');
-                            $("#tab2").append('<h3>' + experience_list[i]["dates"] + '</h3>');
-                            $("#tab2").append('<p>' + experience_list[i]["description"] + '</p>');
-                            $("#tab2").append('<br>');
-                        }
-                    });                    
-                </script>
-            </div>
-     
-            <div id="tab3" class="tab">
-                <p>Tab #3 content goes here!</p>
-                <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum ri.</p>
-            </div>
-     
-            <div id="tab4" class="tab">
-                <p>Tab #4 content goes here!</p>
-                <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
-            </div>
-        </div>
-    </div> -->
 </body>

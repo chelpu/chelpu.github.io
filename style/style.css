@@ -1,6 +1,7 @@
 body {
     margin-left: 0px;
     margin-top: 0px;
+    width: 100%;
 }
 
 .menu {
@@ -57,21 +58,18 @@ body {
     list-style: none;
     padding: 0px;
     margin: 0px;
-    color: #808080;
+    background-color: black;
 }
 
 .sections li {
-    width: auto;
-    height: auto;
-    padding: 0px;
-    margin: 0px;
+    color: #808080;
 }
 
 .container {
    margin: 0px;
    padding: 0px;
    height: auto;
-   width: auto;
+   width: 100%;
 }
 
 .name {
@@ -100,11 +98,13 @@ body {
 #projects {
     color: white;
     background-color: #CCCCFF;
-    height: auto;
+    margin-top: -22px;
+    padding: 40px;
 }
 
 #experience {
     color: white;
     background-color: purple;
-    height: auto;
+    margin-top: -22px;
+    padding: 40px;
 }
