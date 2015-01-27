@@ -42,9 +42,8 @@
                     var experience_list = data["projects"];
                     console.log(experience_list);
                     for(var i = 0; i < experience_list.length; i++) {
-                        $("#projects-wrapper").append('<div><a href=' + experience_list[i]["link"] + '>' + experience_list[i]["title"] + '</a><h3>' + '</h3><p>' + experience_list[i]["description"] + '</p><br></div>');
+                        $("#projects-wrapper").append('<div><a href=' + experience_list[i]["link"] + '><p>' + experience_list[i]["title"] + '</p></a><img src="' + experience_list[i]["image"] + '"/><p>' + experience_list[i]["description"] + '</p></div>');
                     }
-                    $("#projects-wrapper").append('<span class="stretcher"></span>');
                 });                    
                 </script>
 

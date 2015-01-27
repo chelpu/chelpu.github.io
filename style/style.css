@@ -132,15 +132,30 @@ body {
 }
 
 #projects-wrapper {
-    height: auto;
     text-align: justify;
+    }
+#projects-wrapper > div {
+    width: 21%; /* Declare your value. Can be in relative units. */
+    display: inline-block;
+    vertical-align: top;
+    padding: 2%;
 }
 
-#projects-wrapper div {
-    width: auto;
-    vertical-align: top;
+#projects-wrapper div a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 28px;
+}
+
+#projects-wrapper div img {
+    width: 100%;
+    height: auto;
+}
+
+#projects-wrapper:after {
+    content: "";
+    width: 100%;
     display: inline-block;
-    padding: 0px 20px;
 }
 
 .stretcher {

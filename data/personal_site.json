@@ -4,25 +4,25 @@
             "title": "Cello Lingo",
             "link": "https://github.com/chelpu/CelloLingo",
             "description": "An app about cello.",
-            "image": ""
+            "image": "images/cellolingo.png"
         },
         {
             "title": "Quack",
             "link": "https://itunes.apple.com/us/app/quack!/id948865066?mt=8",
             "description": "An app about questions.",
-            "image": ""
+            "image": "images/quack.png"
         },
         {
             "title": "Housemate",
             "link": "https://github.com/chelpu/Housemate",
             "description": "An app about house.",
-            "image": ""
+            "image": "images/housemate.png"
         },
         {
             "title": "Sound Sender",
             "link": "https://github.com/chelpu/cloud-squared",
             "description": "An app about sounds.",
-            "image": ""
+            "image": "images/cellolingo.png"
         }
     ],
     "experience": [
