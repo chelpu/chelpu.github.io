@@ -36,17 +36,20 @@
             </li>
             <li id="projects">
                 <h1 id="projects_header">Projects</h1>
+                <div id="projects-wrapper">
                 <script>
                 $.getJSON("data/personal_site.json", function(data) {
                     var experience_list = data["projects"];
+                    console.log(experience_list);
                     for(var i = 0; i < experience_list.length; i++) {
-                        $("#projects").append('<h2>' + experience_list[i]["title"] + '</h2>');
-                        $("#projects").append('<h3>' + experience_list[i]["link"] + '</h3>');
-                        $("#projects").append('<p>' + experience_list[i]["description"] + '</p>');
-                        $("#projects").append('<br>');
+                        $("#projects-wrapper").append('<div><a href=' + experience_list[i]["link"] + '>' + experience_list[i]["title"] + '</a><h3>' + '</h3><p>' + experience_list[i]["description"] + '</p><br></div>');
                     }
+                    $("#projects-wrapper").append('<span class="stretcher"></span>');
                 });                    
                 </script>
+
+                
+                </div>
             </li>
             <li id="experience">
                 <h1>Experience</h1>
@@ -63,6 +66,18 @@
                 });                    
                 </script>
             </li>
+            <li id="contact">
+                <h1>Contact</h1>
+                <div id="contact-links-wrapper">
+                    <div><a href="http://github.com/chelpu"><img src="images/github.png"/></a></div>
+                    <div><a href="http://facebook.com/chelseliz"><img src="images/facebook.png"/></a></div>
+                    <div><a href="http://linkedin.com/in/chelseapugh"><img src="images/linkedin.png"/></a></div>  
+                    <div><a href="http://linkedin.com/in/chelseapugh"><img src="images/facebook.png"/></a></div>   
+                    <span class="stretcher"></span>
+                </div>
+            </li>
         </ul>
     </div>
+
+    <a href="http://icons8.com/">Icons by Icons8</a>
 </body>

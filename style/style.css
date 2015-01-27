@@ -108,3 +108,48 @@ body {
     margin-top: -22px;
     padding: 40px;
 }
+
+#contact {
+    color: white;
+    background-color: #D3D3D3;
+    padding: 40px;
+}
+
+#contact-links-wrapper div {
+    width: auto;
+    vertical-align: top;
+    display: inline-block;
+    padding: 0px 20px;
+}
+#contact-links-wrapper div a {
+    text-decoration: none;
+
+}
+
+#contact-links-wrapper {
+    height: auto;
+    text-align: justify;
+}
+
+#projects-wrapper {
+    height: auto;
+    text-align: justify;
+}
+
+#projects-wrapper div {
+    width: auto;
+    vertical-align: top;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.stretcher {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+li h1 {
+    text-align: center;
+}
