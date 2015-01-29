@@ -2,6 +2,8 @@ body {
     margin-left: 0px;
     margin-top: 0px;
     width: 100%;
+    background-color: #FFF;
+    font-family: Cambria;
 }
 
 .menu {
@@ -20,6 +22,12 @@ body {
     width: 75%;
 }
 
+.exp {
+    width: 45%;
+    float: left;
+    display: inline-block;
+}
+
 .menu-elts {
     list-style: none;   
 }
@@ -31,7 +39,7 @@ body {
 }
 
 .menu-elts a {
-    font-family: Helvetica;
+    font-family: Cambria;
     font-size: 16pt;
     text-decoration: none; 
 }
@@ -58,7 +66,7 @@ body {
     list-style: none;
     padding: 0px;
     margin: 0px;
-    background-color: black;
+    background-color: white;
 }
 
 .sections li {
@@ -74,8 +82,7 @@ body {
 
 .name {
     left: 0;
-    font-family: Helvetica;
-    color: white;
+    color: #FCD0E6;
     position: absolute;
     text-align: center;
     top: 30%;
@@ -89,30 +96,35 @@ body {
 }
 
 #about {
-    padding: 25%;
+    padding:12% 25%;
     text-align: left;
-    background-color: #D3D3D3;
     height: auto;
 }
 
+#about img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
 #projects {
-    color: white;
-    background-color: #CCCCFF;
+    color: purple;
     margin-top: -22px;
     padding: 40px;
+    height: 100%;
 }
 
 #experience {
     color: white;
-    background-color: purple;
     margin-top: -22px;
     padding: 40px;
-}
+    height: 100%;
+} 
 
 #contact {
     color: white;
-    background-color: #D3D3D3;
     padding: 40px;
+    height: 100%;
 }
 
 #contact-links-wrapper div {
@@ -123,7 +135,7 @@ body {
 }
 #contact-links-wrapper div a {
     text-decoration: none;
-
+    color: purple;
 }
 
 #contact-links-wrapper {
@@ -138,12 +150,11 @@ body {
     width: 21%; /* Declare your value. Can be in relative units. */
     display: inline-block;
     vertical-align: top;
-    padding: 2%;
+    padding: 10% 2%;
 }
 
 #projects-wrapper div a {
     text-decoration: none;
-    text-align: center;
     font-size: 28px;
 }
 
@@ -163,8 +174,4 @@ body {
     display: inline-block;
     font-size: 0;
     line-height: 0;
-}
-
-li h1 {
-    text-align: center;
 }

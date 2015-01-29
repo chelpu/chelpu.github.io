@@ -26,23 +26,28 @@
                 </div>
             </li>
             <li id="about">
+                <div id="about-container"></div>
                 <script>
-                $.getJSON("data/personal_site.json", function(data) {
-                    var about = data["about"];
-                    $("#about").append('<p>' + about["description"] + '</p>');
-                    $("#about").append('<br>');
-                });                    
+                // $.getJSON("data/personal_site.json", function(data) {
+                    // var about = data["about"];
+                    var about = {
+        "picture": "images/mypic.png",
+        "description": "I am a senior studying Computer Science at the University of Michigan College of Engineering. I have a passion for teaching others and have been an instructor's aide for two classes. I have also had two internships in software engineering at Detroit Labs in Detroit, MI and Twilio in San Francisco, CA. In my spare time, I like to create iOS applications, listen to music (currently my favorite is Philip Glass), read autobiographies, and buy stationery to add to my collection."
+    };
+                    $("#about-container").append('<img src="' + about["picture"] + '"/>');
+                    $("#about-container").append('<p>' + about["description"] + '</p>');
+                    $("#about-container").append('<br>');
+                // });                    
                 </script>
             </li>
             <li id="projects">
-                <h1 id="projects_header">Projects</h1>
                 <div id="projects-wrapper">
                 <script>
                 $.getJSON("data/personal_site.json", function(data) {
                     var experience_list = data["projects"];
-                    console.log(experience_list);
+
                     for(var i = 0; i < experience_list.length; i++) {
-                        $("#projects-wrapper").append('<div><a href=' + experience_list[i]["link"] + '><p>' + experience_list[i]["title"] + '</p></a><img src="' + experience_list[i]["image"] + '"/><p>' + experience_list[i]["description"] + '</p></div>');
+                        $("#projects-wrapper").append('<div><img src="' + experience_list[i]["image"] + '"/><a href=' + experience_list[i]["link"] + '><p>' + experience_list[i]["title"] + '</p></a><p>' + experience_list[i]["description"] + '</p></div>');
                     }
                 });                    
                 </script>
@@ -51,27 +56,31 @@
                 </div>
             </li>
             <li id="experience">
-                <h1>Experience</h1>
+
+                <div class="exp" id="engr101"></div>
+                <div class="exp" id="twilio"></div>
+                <div class="exp" id="detroitlabs"></div>
+                <div class="exp" id="wise"></div>
                 <script>
                 $.getJSON("data/personal_site.json", function(data) {
                     var experience_list = data["experience"];
+                
                     for(var i = 0; i < experience_list.length; i++) {
-                        $("#experience").append('<h1>' + experience_list[i]["company"] + '</h1>');
-                        $("#experience").append('<h2>' + experience_list[i]["title"] + '</h2>');
-                        $("#experience").append('<h3>' + experience_list[i]["dates"] + '</h3>');
-                        $("#experience").append('<p>' + experience_list[i]["description"] + '</p>');
-                        $("#experience").append('<br>');
+                        var tag = "#" + experience_list[i]["id"];
+                        $(tag).append('<h2>' + experience_list[i]["company"] + '</h1>');
+                        $(tag).append('<h2>' + experience_list[i]["title"] + '</h2>');
+                        $(tag).append('<h3>' + experience_list[i]["dates"] + '</h3>');
+                        $(tag).append('<p>' + experience_list[i]["description"] + '</p>');
+                        $(tag).append('<br>');
                     }
                 });                    
                 </script>
             </li>
             <li id="contact">
-                <h1>Contact</h1>
                 <div id="contact-links-wrapper">
                     <div><a href="http://github.com/chelpu"><img src="images/github.png"/></a></div>
                     <div><a href="http://facebook.com/chelseliz"><img src="images/facebook.png"/></a></div>
                     <div><a href="http://linkedin.com/in/chelseapugh"><img src="images/linkedin.png"/></a></div>  
-                    <div><a href="http://linkedin.com/in/chelseapugh"><img src="images/facebook.png"/></a></div>   
                     <span class="stretcher"></span>
                 </div>
             </li>

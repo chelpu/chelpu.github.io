@@ -3,7 +3,7 @@
         {
             "title": "Cello Lingo",
             "link": "https://github.com/chelpu/CelloLingo",
-            "description": "An app about cello.",
+            "description": "An application designed to help students.",
             "image": "images/cellolingo.png"
         },
         {
@@ -27,24 +27,28 @@
     ],
     "experience": [
         {
+            "id": "engr101",
             "company": "University of Michigan - College of Engineering",
             "title": "ENGR 101 Instructor's Aide",
             "dates": "September 2013 - Present",
             "description": "help students with stuff"
         },
         {
+            "id": "twilio",
             "company": "Twilio",
             "title": "Software Engineering Intern",
             "dates": "May 2014 - August 2014",
             "description": "do stuff with Java and js and more"
         },
         {
+            "id": "detroitlabs",
             "company": "Detroit Labs",
             "title": "Application Developer Intern",
             "dates": "May 2013 - August 2013",
             "description": "help students with stuff"
         },
         {
+            "id": "wise",
             "company": "Women in Science and Engineering",
             "title": "RobotC Instructor",
             "dates": "June 2013",
@@ -58,7 +62,7 @@
         }
     ],
     "about": {
-        "picture": "",
-        "description": "Im a senior at the University of Michigan studying computer science and stuff. \nhahahhahahahahahhahahahahahahhahahahahhahahahahahahhahaha\nhahahhahahahahahhahahahahahahhahahahahhahahahahahahhahaha\nhahahhahahahahahhahahahahahahhahahahahhahahahahahahhahaha\nhahahhahahahahahhahahahahahahhahahahahhahahahahahahhahaha\nhahahhahahahahahhahahahahahahhahahahahhahahahahahahhahaha\nhahahhahahahahahhahahahahahahhahahahahhahahahahahahhahaha\n"
+        "picture": "images/mypic.png",
+        "description": "I am a senior studying Computer Science at the University of Michigan College of Engineering. I have a passion for teaching others and have been an instructor's aide for two classes. I have also had two internships in software engineering at Detroit Labs in Detroit, MI and Twilio in San Francisco, CA. In my spare time, I like to create iOS applications, listen to music (currently my favorite is Philip Glass), read autobiographies, and buy stationery to add to my collection."
     }
 }
