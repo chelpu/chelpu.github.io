@@ -3,26 +3,26 @@
         {
             "title": "Cello Lingo",
             "link": "https://github.com/chelpu/CelloLingo",
-            "description": "An application designed to help students.",
-            "image": "images/cellolingo.png"
+            "description": "An iOS application designed to help people learn how to play the cello. It has four main functions which facilitate learning how to read music, use proper technique, play music on the cello, and find songs with cello in them.",
+            "image": "images/placeholder.png"
         },
         {
             "title": "Quack",
             "link": "https://itunes.apple.com/us/app/quack!/id948865066?mt=8",
-            "description": "An app about questions.",
-            "image": "images/quack.png"
+            "description": "An iOS application that can be used for quickly surveying friends and gauging opinions on subjective questions. Includes the ability to ask friends questions, answer friends' questions with one click, and view results of questions that you've asked friends so you can make decisions with ease.",
+            "image": "images/placeholder.png"
         },
         {
             "title": "Housemate",
             "link": "https://github.com/chelpu/Housemate",
-            "description": "An app about house.",
-            "image": "images/housemate.png"
+            "description": "An iOS application for coordinating duties, bills, and shopping between housemates. Designed for houses of college students who may or may not know each other. This app will allow housemates to send each other reminders to pay bills, do chores, or buy items for the household.",
+            "image": "images/placeholder.png"
         },
         {
             "title": "Sound Sender",
             "link": "https://github.com/chelpu/cloud-squared",
-            "description": "An app about sounds.",
-            "image": "images/cellolingo.png"
+            "description": "A Twilio application that allows you to send a query via text message and recieve a call that will play a song from SoundCloud relating to that query.",
+            "image": "images/placeholder.png"
         }
     ],
     "experience": [
@@ -31,34 +31,34 @@
             "company": "University of Michigan - College of Engineering",
             "title": "ENGR 101 Instructor's Aide",
             "dates": "September 2013 - Present",
-            "description": "help students with stuff"
+            "description": "Responsible for holding office hours to guide students in completing functional and well-styled C++ and MATLAB programs. Grade exams, projects, and worksheets to ensure correctness, style, and progress."
         },
         {
             "id": "twilio",
             "company": "Twilio",
             "title": "Software Engineering Intern",
             "dates": "May 2014 - August 2014",
-            "description": "do stuff with Java and js and more"
+            "description": "Backend development for voice services team using Java and frontend development creating visualizations using javascript/d3."
         },
         {
             "id": "detroitlabs",
             "company": "Detroit Labs",
             "title": "Application Developer Intern",
             "dates": "May 2013 - August 2013",
-            "description": "help students with stuff"
+            "description": "Developing apps and hacking alongside the best."
         },
         {
             "id": "wise",
             "company": "Women in Science and Engineering",
             "title": "RobotC Instructor",
             "dates": "June 2013",
-            "description": "help high schoolers learn robotC"
+            "description": "Led a week-long camp for high school girls, assisting them in learning and applying a low-level language, RobotC, to program Lego NXT robots."
         },
         {
             "company": "Engineering Advising Center",
             "title": "Peer Advisor",
             "dates": "June 2012 - April 2013",
-            "description": "help freshmen with shit"
+            "description": "I advise undeclared students attending the University of Michigan College of Engineering on what classes to take, time management, extracurricular activities that might interest them and more."
         }
     ],
     "about": {

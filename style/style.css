@@ -22,12 +22,6 @@ body {
     width: 75%;
 }
 
-.exp {
-    width: 45%;
-    float: left;
-    display: inline-block;
-}
-
 .menu-elts {
     list-style: none;   
 }
@@ -109,21 +103,21 @@ body {
 
 #projects {
     color: purple;
-    margin-top: -22px;
-    padding: 40px;
+/*    margin-top: -22px;
+*/    padding: 0.3% 40px;
     height: 100%;
 }
 
 #experience {
-    color: white;
-    margin-top: -22px;
+    color: black;
+    /*margin-top: -22px;*/
     padding: 40px;
     height: 100%;
 } 
 
 #contact {
     color: white;
-    padding: 40px;
+    padding: 20px;
     height: 100%;
 }
 
@@ -131,7 +125,7 @@ body {
     width: auto;
     vertical-align: top;
     display: inline-block;
-    padding: 0px 20px;
+    padding: 25% 100px;
 }
 #contact-links-wrapper div a {
     text-decoration: none;
@@ -143,9 +137,6 @@ body {
     text-align: justify;
 }
 
-#projects-wrapper {
-    text-align: justify;
-    }
 #projects-wrapper > div {
     width: 21%; /* Declare your value. Can be in relative units. */
     display: inline-block;
@@ -174,4 +165,30 @@ body {
     display: inline-block;
     font-size: 0;
     line-height: 0;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    float: left;
+    display: inline-block;
+    padding: 25px;
+}
+
+.exptext {
+    width: 50%;
+    float: left;
+    display: inline-block;
+}
+
+.exp {
+    width: 100%;
+    float: left;
+    color: black;
+    padding: 2% 3%;
+}
+
+#ref {
+    text-align: center;
+    display: block;
 }

@@ -1,17 +1,17 @@
 <head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="tab_control.js"></script>
-    <script src="ascensor.js"></script>
+    <script src="scroll.js"></script>
     <link rel=stylesheet type="text/css" href="style/style.css">
 </head>
 <body>
     <div class="menu">
         <div class="menu-list">
             <ul class="menu-elts">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
             </ul>
         </div>
     </div>
@@ -32,48 +32,12 @@
                     // var about = data["about"];
                     var about = {
         "picture": "images/mypic.png",
-        "description": "I am a senior studying Computer Science at the University of Michigan College of Engineering. I have a passion for teaching others and have been an instructor's aide for two classes. I have also had two internships in software engineering at Detroit Labs in Detroit, MI and Twilio in San Francisco, CA. In my spare time, I like to create iOS applications, listen to music (currently my favorite is Philip Glass), read autobiographies, and buy stationery to add to my collection."
+        "description": "I recently graduated from the University of Michigan College of Engineering with a degree in Computer Science. I have a passion for teaching others and have been an instructor's aide for two classes. I have also had two internships in software engineering at Detroit Labs in Detroit, MI and Twilio in San Francisco, CA. In August, I will begin a full time software engineering position at Apple. In my spare time, I like to create iOS applications, listen to music (currently my favorite is Philip Glass), read autobiographies, and buy stationery to add to my collection."
     };
                     $("#about-container").append('<img src="' + about["picture"] + '"/>');
                     $("#about-container").append('<p>' + about["description"] + '</p>');
                     $("#about-container").append('<br>');
                 // });                    
-                </script>
-            </li>
-            <li id="projects">
-                <div id="projects-wrapper">
-                <script>
-                $.getJSON("data/personal_site.json", function(data) {
-                    var experience_list = data["projects"];
-
-                    for(var i = 0; i < experience_list.length; i++) {
-                        $("#projects-wrapper").append('<div><img src="' + experience_list[i]["image"] + '"/><a href=' + experience_list[i]["link"] + '><p>' + experience_list[i]["title"] + '</p></a><p>' + experience_list[i]["description"] + '</p></div>');
-                    }
-                });                    
-                </script>
-
-                
-                </div>
-            </li>
-            <li id="experience">
-
-                <div class="exp" id="engr101"></div>
-                <div class="exp" id="twilio"></div>
-                <div class="exp" id="detroitlabs"></div>
-                <div class="exp" id="wise"></div>
-                <script>
-                $.getJSON("data/personal_site.json", function(data) {
-                    var experience_list = data["experience"];
-                
-                    for(var i = 0; i < experience_list.length; i++) {
-                        var tag = "#" + experience_list[i]["id"];
-                        $(tag).append('<h2>' + experience_list[i]["company"] + '</h1>');
-                        $(tag).append('<h2>' + experience_list[i]["title"] + '</h2>');
-                        $(tag).append('<h3>' + experience_list[i]["dates"] + '</h3>');
-                        $(tag).append('<p>' + experience_list[i]["description"] + '</p>');
-                        $(tag).append('<br>');
-                    }
-                });                    
                 </script>
             </li>
             <li id="contact">
@@ -84,8 +48,111 @@
                     <span class="stretcher"></span>
                 </div>
             </li>
+            <li id="projects">
+                <div id="projects-wrapper">
+                <script>
+                // $.getJSON("data/personal_site.json", function(data) {
+                //     var experience_list = data["projects"];
+                    var experience_list = [
+        {
+            "title": "Cello Lingo",
+            "link": "https://github.com/chelpu/CelloLingo",
+            "description": "An iOS application designed to help people learn how to play the cello. It has four main functions which facilitate learning how to read music, use proper technique, play music on the cello, and find songs with cello in them.",
+            "image": "images/placeholder.png"
+        },
+        {
+            "title": "Quack",
+            "link": "https://itunes.apple.com/us/app/quack!/id948865066?mt=8",
+            "description": "An iOS application that can be used for quickly surveying friends and gauging opinions on subjective questions. Includes the ability to ask friends questions, answer friends' questions with one click, and view results of questions that you've asked friends so you can make decisions with ease.",
+            "image": "images/placeholder.png"
+        },
+        {
+            "title": "Housemate",
+            "link": "https://github.com/chelpu/Housemate",
+            "description": "An iOS application for coordinating duties, bills, and shopping between housemates. Designed for houses of college students who may or may not know each other. This app will allow housemates to send each other reminders to pay bills, do chores, or buy items for the household.",
+            "image": "images/placeholder.png"
+        },
+        {
+            "title": "Sound Sender",
+            "link": "https://github.com/chelpu/cloud-squared",
+            "description": "A Twilio application that allows you to send a query via text message and recieve a call that will play a song from SoundCloud relating to that query.",
+            "image": "images/placeholder.png"
+        }
+    ];
+                    for(var i = 0; i < experience_list.length; i++) {
+                        $("#projects-wrapper").append('<div><img src="' + experience_list[i]["image"] + '"/><a href=' + experience_list[i]["link"] + '><p>' + experience_list[i]["title"] + '</p></a><p>' + experience_list[i]["description"] + '</p></div>');
+                    }
+                // });                    
+                </script>
+
+                
+                </div>
+            </li>
+            <li id="experience">
+
+                <div class="exp" >
+                    <img src="http://upload.wikimedia.org/wikipedia/en/b/b8/Umichigan_color_seal.png" class="logo" id="engr101logo">
+                    <div class="exptext" id="engr101"></div>
+                </div>
+                <div class="exp" >
+                    <img src="http://cloud-elements.com/wp-content/uploads/2014/02/twilio-logo2-01.png" class="logo" id="twiliologo">
+                    <div class="exptext" id="twilio"></div>
+                </div>
+                <div class="exp">
+                    <img src="http://static.tumblr.com/ff899e435c4719bfa15b142109f9f1b1/rdchzrx/d61mswxke/tumblr_static_dl-logo-750x750.png" class="logo" id="dllogo">
+                    <div class="exptext" id="detroitlabs"></div>
+                </div>
+                <div class="exp">
+                    <img src="http://upload.wikimedia.org/wikipedia/en/b/b8/Umichigan_color_seal.png" class="logo" id="wiselogo">
+                    <div class="exptext" id="wise"></div>
+                </div>
+                <script>
+                // $.getJSON("data/personal_site.json", function(data) {
+                //     var experience_list = data["experience"];
+                var experience_list = [
+        {
+            "id": "engr101",
+            "company": "University of Michigan",
+            "title": "ENGR 101 Instructor's Aide",
+            "dates": "September 2013 - Present",
+            "description": "Responsible for holding office hours to guide students in completing functional and well-styled C++ and MATLAB programs. Grade exams, projects, and worksheets to ensure correctness, style, and progress."
+        },
+        {
+            "id": "twilio",
+            "company": "Twilio",
+            "title": "Software Engineering Intern",
+            "dates": "May 2014 - August 2014",
+            "description": "Backend development for voice services team using Java and frontend development creating visualizations using javascript/d3."
+        },
+        {
+            "id": "detroitlabs",
+            "company": "Detroit Labs",
+            "title": "Application Developer Intern",
+            "dates": "May 2013 - August 2013",
+            "description": "Developing apps and hacking alongside the best."
+        },
+        {
+            "id": "wise",
+            "company": "Women in Science & Engineering",
+            "title": "RobotC Instructor",
+            "dates": "June 2013",
+            "description": "Led a week-long camp for high school girls, assisting them in learning and applying a low-level language, RobotC, to program Lego NXT robots."
+        }
+    ];
+                    for(var i = 0; i < experience_list.length; i++) {
+                        var tag = "#" + experience_list[i]["id"];
+                        $(tag).append('<h2>' + experience_list[i]["company"] + '</h2>');
+                        $(tag).append('<h2>' + experience_list[i]["title"] + '</h2>');
+                        $(tag).append('<h3>' + experience_list[i]["dates"] + '</h3>');
+                        $(tag).append('<p>' + experience_list[i]["description"] + '</p>');
+                        $(tag).append('<br>');
+                    }
+                // });                    
+                </script>
+            </li>
+            
         </ul>
     </div>
 
-    <a href="http://icons8.com/">Icons by Icons8</a>
+    <a id="ref" href="http://icons8.com/">Icons by Icons8</a>
 </body>
